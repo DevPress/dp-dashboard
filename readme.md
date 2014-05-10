@@ -8,13 +8,11 @@ Transform your WordPress control panel by simplifying the admin user interface. 
 
 ### Screenshots
 
-![Login page.](https://github.com/DevPress/DP-Dashboard/raw/master/screenshots/dp-dashboard-login.png)
-
 ![Edit screen.](https://github.com/DevPress/DP-Dashboard/raw/master/screenshots/dp-dashboard-edit.png)
 
 ![Posts screen.](https://github.com/DevPress/DP-Dashboard/raw/master/screenshots/dp-dashboard-posts.png)
 
-![Menu admin.](https://github.com/DevPress/DP-Dashboard/raw/master/screenshots/dp-dashboard-menus.pn)
+![Menu admin.](https://github.com/DevPress/DP-Dashboard/raw/master/screenshots/dp-dashboard-menus.png)
 
 ### Reasons to Use DP Dashboard
 
