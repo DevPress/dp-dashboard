@@ -1,0 +1,8 @@
+Dashicons:
+==========
+https://github.com/melchoyce/dashicons
+
+FontAwesome:
+============
+http://fortawesome.github.io/Font-Awesome/
+SIL Open Font License - http://scripts.sil.org/OFL

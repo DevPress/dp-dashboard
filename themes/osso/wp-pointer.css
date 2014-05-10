@@ -1,0 +1,201 @@
+/* Catch all preprend elements */
+.wp-pointer-buttons a.close:before,
+.wp-pointer-content h3:before {
+	display: inline-block;
+	font-family: FontAwesome;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: normal;
+	margin-right: 6px;
+	}
+		.wp-pointer-buttons a.close:before {
+			content: "\f057";
+			}
+		.wp-pointer-content h3:before {
+			background: #bbb;
+			border-radius: 50%;
+			box-shadow: inset 0 1px 1px rgba(0,0,0,0.15);
+			color: #fff;
+			content: "\f024";
+			font-size: 18px;
+			height: 30px;
+			line-height: 30px;
+			margin-top: -3px;
+			margin-right: 12px;
+			text-align: center;
+			text-shadow: 0 1px 1px rgba(0,0,0,0.15);
+			vertical-align: middle;
+			width: 30px;
+			}
+
+.wp-pointer {
+	margin-bottom: 24px;
+	position: relative;
+	}
+
+	.wp-pointer-content {
+		background: #fff;
+		border-radius: 3px;
+		box-shadow: 0 0 0 6px rgba(0,0,0,0.7);
+		padding: 0;
+		position: relative;
+		}
+
+		.wp-pointer-content h3 {
+			background: #fcfcfc;
+			background-image: linear-gradient(bottom, rgb(252,252,252) 0%, rgb(255,255,255) 75%);
+			background-image: -o-linear-gradient(bottom, rgb(252,252,252) 0%, rgb(255,255,255) 75%);
+			background-image: -moz-linear-gradient(bottom, rgb(252,252,252) 0%, rgb(255,255,255) 75%);
+			background-image: -webkit-linear-gradient(bottom, rgb(252,252,252) 0%, rgb(255,255,255) 75%);
+			background-image: -ms-linear-gradient(bottom, rgb(252,252,252) 0%, rgb(255,255,255) 75%);
+			background-image: -webkit-gradient(
+				linear,
+				left bottom,
+				left top,
+				color-stop(0, rgb(252,252,252)),
+				color-stop(0.75, rgb(255,255,255))
+			);
+			border-radius: 3px 3px 0 0;
+			border-bottom: 1px solid #f0f0f0;
+			box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+			color: #333;
+			font-size: 21px;
+			font-weight: 400;
+			line-height: 36px;
+			padding: 9px 18px 7px 12px;
+			text-shadow: 0 1px 0 #fff;
+			}
+
+		.wp-pointer-content p {
+			padding: 12px 18px 0 18px;
+			}
+
+	.wp-pointer-buttons {
+		overflow: auto;
+		padding: 12px 18px;
+		}
+
+		.wp-pointer-buttons a {
+			float: right;
+			display: inline-block;
+			text-decoration: none;
+			}
+
+		.wp-pointer-buttons a.close {
+			padding-left: 3px;
+			position: relative;
+			}
+
+	/* The arrow base class must take up no space, even with transparent borders. */
+	.wp-pointer-arrow,
+		.wp-pointer-arrow-inner {
+		height: 0;
+		position: absolute;
+		width: 0;
+		}
+	.wp-pointer-arrow {
+		border-style: solid;
+		z-index: 10;
+		}
+		.wp-pointer-arrow-inner {z-index: 20;}
+
+	/* Make Room for the Arrow! */
+	.wp-pointer-top,
+	.wp-pointer-undefined {
+		padding-top: 12px;
+		}
+	.wp-pointer-bottom {
+		padding-bottom: 12px;
+		}
+	.wp-pointer-left {
+		padding-left: 12px;
+		}
+	.wp-pointer-right {
+		padding-right: 12px;
+		}
+
+	/* Base Size & Positioning */
+	.wp-pointer-top .wp-pointer-arrow,
+	.wp-pointer-bottom .wp-pointer-arrow,
+	.wp-pointer-undefined .wp-pointer-arrow {
+		border-color: #fff transparent;
+		left: 50px;
+		}
+
+	.wp-pointer-top .wp-pointer-arrow,
+	.wp-pointer-undefined .wp-pointer-arrow {
+		border-width: 0 12px 12px 12px;
+		top: 0;
+		}
+
+	.wp-pointer-bottom .wp-pointer-arrow {
+		border-color: #fff transparent;
+		border-width: 12px 12px 0 12px;
+		bottom: 0;
+		}
+		
+	.wp-pointer-left .wp-pointer-arrow,
+	.wp-pointer-right .wp-pointer-arrow {
+		border-color: transparent #fff;
+		margin-top: -12px;
+		top: 50%;
+		}
+	.wp-pointer-left .wp-pointer-arrow {
+		border-width: 12px 12px 12px 0;
+		left: 0;
+		}
+	.wp-pointer-right .wp-pointer-arrow {
+		border-width: 12px 0 12px 12px;
+		right: 0;
+		}
+
+/* === RTL Adjustments === */
+		
+.rtl .wp-pointer-buttons a.close:before,
+.rtl .wp-pointer-content h3:before {
+	margin-left: 6px;
+	margin-right: 0;
+	}
+		.rtl .wp-pointer-content h3:before {
+			margin-left: 12px;
+			margin-right: 0;
+			}
+
+		.rtl .wp-pointer-content h3 {
+			border-radius: 3px 0 0 3px;
+			padding: 9px 12px 7px 18px;
+			}
+
+		.rtl .wp-pointer-buttons a.close {
+			padding-left: 0;
+			padding-right: 3px;
+			}
+
+	/* Make Room for the Arrow! */
+
+	.rtl .wp-pointer-left {
+		padding-left: 0;
+		padding-right: 12px;
+		}
+	.rtl .wp-pointer-right {
+		padding-left: 12px;
+		padding-right: 0;
+		}
+
+	/* Base Size & Positioning */
+	.rtl .wp-pointer-top .wp-pointer-arrow,
+	.rtl .wp-pointer-bottom .wp-pointer-arrow,
+	.rtl .wp-pointer-undefined .wp-pointer-arrow {
+		left: auto;
+		right: 50px;
+		}
+	.rtl .wp-pointer-left .wp-pointer-arrow {
+		border-width: 12px 0 12px 12px;
+		right: 0;
+		left: auto;
+		}
+	.rtl .wp-pointer-right .wp-pointer-arrow {
+		border-width: 12px 12px 12px 0;
+		left: 0;
+		right: auto;
+		}

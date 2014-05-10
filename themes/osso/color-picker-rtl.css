@@ -1,0 +1,23 @@
+
+
+	/* === color picker launch button === */
+	.wp-color-result {
+		margin: 6px 0 6px 6px;
+		padding-left: 0;
+		padding-right: 30px;
+		position: relative;
+		}
+
+		/* button text */
+		.wp-color-result:after {
+			border-left: 0;
+			border-right: 1px solid #ccc;
+			border-radius: 1px 0 0 1px;
+			left: 0;
+			right: auto;
+			}
+
+.wp-picker-container .button {
+	margin-left: 0;
+	margin-right: 6px;
+}

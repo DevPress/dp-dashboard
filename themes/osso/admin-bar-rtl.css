@@ -1,0 +1,111 @@
+	#wpadminbar .ab-top-secondary {float: right;}
+
+			/**
+			 * Menu icons
+			 *
+			 * Keep this early in the file so selectors below can override if needed.
+			 ************************************************/
+			#wpadminbar .ab-icon {float: right;}
+
+			#wpadminbar .ab-label {
+				margin-left: 0px;
+				margin-right: 4px;
+				}
+				
+			/* Admin bar Font Awesome Icons */
+			#wp-admin-bar-root-default > li > a:before,
+			#wp-admin-bar-top-secondary > li > a:before,
+			#wpadminbar #adminbarsearch:before,
+			#wpadminbar .quicklinks li .blavatar:before {
+				float: right;
+				margin-left: 8px;
+				margin-right: 0;
+				}
+
+			#wpadminbar .quicklinks li .blavatar:before {float: none;}
+			
+			/**
+			 * Admin Bar: Miscellaneous
+			 ************************************************/
+				
+			#wpadminbar .quicklinks li#wp-admin-bar-my-account a span.count,
+			#wpadminbar .quicklinks li#wp-admin-bar-my-account-with-avatar a span.count {
+				margin-left: 0;
+				margin-right: 6px;
+				}
+		
+			/**
+			 * Menu Items
+			 ************************************************/
+
+				#wpadminbar .quicklinks li {
+					border: 0;
+					border-left: 1px solid #c2ddde;
+					float: right;
+					}
+						
+						/**
+						 * Second Level
+						 ************************************************/
+
+								#wpadminbar .quicklinks .ab-submenu li {border-left: 0;}
+	
+									/* second level, parent link */
+										
+										/* before parent link */
+										#wpadminbar .quicklinks .menupop .menupop > .ab-item:before {
+											border-width: 3px 4px 3px 0px;
+											float: left;
+											margin: 9px 11px 0 0;
+											}
+
+									/**
+									 * Third Level
+									 ************************************************/
+
+									#wpadminbar .menupop li:hover > .ab-sub-wrapper,
+									#wpadminbar .menupop li.hover > .ab-sub-wrapper {
+										margin-left: 0;
+										margin-right: 100%;
+										}
+										
+/**
+ * Specific Menu Items
+ ************************************************/
+
+	/* === My Account === */
+
+	/* small avatar */
+	#wpadminbar .quicklinks li#wp-admin-bar-my-account.with-avatar > a img {
+		float: right;
+		margin: 8px 0 0 12px;
+		}
+
+			/* medium avatar, hidden by default */
+			#wp-admin-bar-user-info img.avatar {
+				float: right;
+				margin: 6px 0 6px 12px;
+				}
+
+	/* === Admin bar search === */
+
+		#wpadminbar #adminbarsearch:before {
+			left: auto;
+			right: 24px;
+			}
+			#wpadminbar #adminbarsearch .adminbar-input {
+				padding: 0 27px 0 12px;
+				}
+	
+/**
+ * Admin bar skip link
+ ************************************************/
+#wpadminbar .screen-reader-text,
+#wpadminbar .screen-reader-text span {
+	left: auto;
+	right: -1000em;
+	}
+#wpadminbar .screen-reader-shortcut:focus {
+	left: auto;
+	right: 0;
+	}

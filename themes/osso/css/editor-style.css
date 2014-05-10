@@ -1,0 +1,52 @@
+body {
+	font-size: 14px;
+	line-height: 22px;
+	margin: 12px 18px;
+	}
+	
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.6em;
+	}
+	
+.mceItemTable,
+.mceItemTable td,
+.mceItemTable th,
+.mceItemTable caption {
+	font-family: Arial, Helvetica, sans-serif;
+	}
+	
+.mceItemTable,
+.mceItemTable td,
+.mceItemTable th,
+.mceItemTable caption,
+.mceItemVisualAid {
+	border-style: solid;
+	}
+	
+	.mceItemTable caption,
+	.mceItemTable td,
+	.mceItemTable th {
+		font-size: 12px;
+		padding: 3px;
+		}
+		
+	.mceItemTable th {
+		font-weith: bold;
+		}
+	
+.alignleft {
+	margin-right: 20px;
+	}
+.alignright {
+	margin-left: 20px;
+	}
+	
+.wp-caption {
+	background: #fff;
+	border-color: #d6d6d6;
+	border-radius: 0;
+	}
+	.wp-caption-dd {
+		line-height: 18px;
+		padding: 10px;
+		}

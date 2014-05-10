@@ -1,0 +1,40 @@
+/* button groups */
+
+.button-group {
+	display: inline-block;
+	font-size: 0;
+	position: relative;
+	vertical-align: middle;
+	white-space: nowrap;
+	}
+	.button-group > .button {
+		display: inline-block;
+		border-radius: 0;
+		margin-right: -1px;
+		z-index: 10;
+		}
+	.button-group > .button-primary {
+		z-index: 100;
+		}
+	.button-group > .button:hover {
+		z-index: 20;
+		}
+	.button-group > .button:first-child {
+		border-radius: 3px 0 0 3px;
+		}
+	.button-group > .button:last-child {
+		border-radius: 0 3px 3px 0;
+		}
+
+/* rtl button groups */
+
+	.rtl .button-group > .button {
+		margin-left: -1px;
+		margin-right: 0;
+		}
+	.rtl .button-group > .button:first-child {
+		border-radius: 0 3px 3px 0;
+		}
+	.rtl .button-group > .button:last-child {
+		border-radius: 3px 0 0 3px;
+		}
